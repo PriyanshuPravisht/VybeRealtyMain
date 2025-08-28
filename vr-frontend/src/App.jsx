@@ -1,9 +1,10 @@
 import "./App.css";
+import PropertyListing from './components/layouts/PropertyList'
 
 function App() {
   return (
     <>
-      <div>hsjh</div>
+      <PropertyListing/>
     </>
   );
 }
