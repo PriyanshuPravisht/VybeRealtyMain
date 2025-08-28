@@ -1,10 +1,13 @@
-import "./App.css";
-import PropertyListing from './components/layouts/PropertyList'
+import "./App.scss";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { AppRoutes } from "./utils/Routes";
 
 function App() {
+  const router = createBrowserRouter(AppRoutes);
+
   return (
     <>
-      <PropertyListing/>
+      <RouterProvider router={router} />
     </>
   );
 }
