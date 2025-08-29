@@ -1,3 +1,7 @@
-@use "./styles/themes.scss";
-@use "./styles//components/navbar";
-@use "./styles//components/video";
+@use "./styles/themes";
+@use "./styles/navigation/navbar";
+@use "./styles/navigation/footer";
+
+@use "./styles/home/video";
+@use "./styles/home/services";
+@use "./styles/components/card";

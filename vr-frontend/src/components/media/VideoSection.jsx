@@ -8,7 +8,7 @@ export const VideoSection = () => {
       </video>
 
       <div className="video-overlay">
-        <h1>Welcome to My Website</h1>
+        <p className="heading">Welcome to My Website</p>
         <p>This text is centered on top of the video background.</p>
         <button>Get Started</button>
       </div>

@@ -1,7 +1,9 @@
 import React from "react";
 import { UserLayout } from "../components/layouts/UserLayout";
 import Home from "../pages/Home";
-import PropertyListing from "../components/layouts/PropertyList";
+import Property from "../pages/Property";
+import AboutUs from "../pages/AboutUs";
+import ContactUs from "../pages/ContactUs";
 
 export const AppRoutes = [
   {
@@ -13,8 +15,16 @@ export const AppRoutes = [
         element: <Home />,
       },
       {
+        path: "/about",
+        element: <AboutUs />,
+      },
+      {
+        path: "/contact",
+        element: <ContactUs />,
+      },
+      {
         path: "/properties",
-        element: <PropertyListing />,
+        element: <Property />,
       },
     ],
   },

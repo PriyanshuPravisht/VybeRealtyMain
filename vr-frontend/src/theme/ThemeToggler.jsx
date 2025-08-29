@@ -9,7 +9,11 @@ const ThemeToggler = () => {
 
   return (
     <button onClick={toggleTheme} className="theme-toggle">
-      {theme === "light" ? <MdSunny /> : <IoMoon />}
+      {theme === "light" ? (
+        <MdSunny size={30} style={{ color: "yellow" }} />
+      ) : (
+        <IoMoon size={30} style={{ color: "white" }} />
+      )}
     </button>
   );
 };
