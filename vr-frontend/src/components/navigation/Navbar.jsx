@@ -6,9 +6,9 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 const Navbar = () => {
   return (
     <div className="nav-container">
-      <h1>
+      <Link className="logo" to="/">
         VYBE <span>Realty</span>
-      </h1>
+      </Link>
       <div className="nav-actions">
         <nav className="nav-links">
           <ul>

@@ -1,5 +1,7 @@
 import { useThemeStore } from "../store/themeStore";
 import { IoMoonOutline } from "react-icons/io5";
+import { IoMoon } from "react-icons/io5";
+import { MdSunny } from "react-icons/md";
 import { TiWeatherSunny } from "react-icons/ti";
 
 const ThemeToggler = () => {
@@ -7,8 +9,7 @@ const ThemeToggler = () => {
 
   return (
     <button onClick={toggleTheme} className="theme-toggle">
-      {/* {theme === "light" ? "Dark" : "Light"} Mode */}
-      {theme === "light" ? <TiWeatherSunny /> : <IoMoonOutline />}
+      {theme === "light" ? <MdSunny /> : <IoMoon />}
     </button>
   );
 };
