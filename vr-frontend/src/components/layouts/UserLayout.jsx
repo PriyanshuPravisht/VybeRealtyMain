@@ -13,6 +13,7 @@ export const UserLayout = () => {
       theme === "dark" ? "dark-theme" : "light-theme"
     );
   }, [theme]);
+  
   return (
     <div>
       <Navbar />
