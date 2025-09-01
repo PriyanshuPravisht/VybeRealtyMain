@@ -1,0 +1,93 @@
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: #f7f7f7; /* light background like screenshot */
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 800px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 0.4rem;
+  color: #111;
+}
+
+.required {
+  color: red;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background: #faf7f5;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.checkbox-group {
+  margin-top: 0.5rem;
+}
+
+.policy-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.submit-btn {
+  background: black;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background: #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr; /* stack First/Last name */
+  }
+}

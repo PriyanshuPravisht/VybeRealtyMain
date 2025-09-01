@@ -1,6 +1,5 @@
 .footer {
-  background: #fff;
-  color: #333;
+  background-color: var(--bg-color);
   padding: 60px 80px 20px;
   font-family: "Arial", sans-serif;
 
@@ -25,8 +24,6 @@
   &__left {
     display: grid;
     flex: 1;
-
-    // background-color: rgb(50, 54, 48);
   }
   &__inner {
     width: 60%;
@@ -39,10 +36,7 @@
 
   &__heading {
     font-size: 16px;
-
     margin-bottom: 12px;
-
-    // color: #222;
   }
 
   &__desc {

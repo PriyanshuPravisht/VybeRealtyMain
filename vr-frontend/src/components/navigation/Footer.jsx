@@ -8,11 +8,6 @@ const Footer = () => {
         {/* Left side */}
         <div className="footer__left">
           <div className="footer__inner">
-            {/* <img
-              src="https://neorealtydubai.ae/wp-content/uploads/2023/12/neo-realty-main.png"
-              alt="Neo Realty"
-              className="footer__logo"
-            /> */}
             <Link className="logo" to="/">
               VYBE <span>Realty</span>
             </Link>

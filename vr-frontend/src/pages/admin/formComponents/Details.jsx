@@ -1,11 +1,12 @@
 import React from "react";
-import MyInputs from "../../../components/Atoms/MyInputs";
 import MyDropDown from "../../../components/atoms/MyDropDown";
 import { useForm } from "react-hook-form";
 import MyTextarea from "../../../components/Atoms/MyTextarea";
 import MyButton from "../../../components/atoms/MyButton";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import MyInputs from "../../../components/atoms/MyInputs";
 
 const Details = () => {
   const {
@@ -21,28 +22,28 @@ const Details = () => {
 
   const propertyType = watch("propertyType");
   const navigate = useNavigate();
-  
+
   const onSubmit = (data) => {
     console.log(data);
-    navigate('/admin/survey/2');
-  
+    navigate("/admin/survey/2");
   };
 
   return (
     <div className="formCont-bg">
       <div
         style={{
-          backgroundColor: "rgba(0,0,0,0.5)",
+          // backgroundColor: "rgba(0,0,0,0.5)",
+          // boxShadow: "20px 20px 50px 15px grey",
           height: "100vh",
           display: "flex",
           alignItems: "center",
-          justifyContent:'center',
-          overflowX:'hidden',
+          justifyContent: "center",
+          overflowX: "hidden",
         }}
       >
         <motion.div
-          initial={{ x: "100vw", opacity: 0 }} 
-          animate={{ x: 0, opacity: 1 }} 
+          initial={{ x: "100vw", opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
           <form onSubmit={handleSubmit(onSubmit)} className="details-form">
