@@ -1,14 +1,6 @@
-import "../../styles/components/card.scss";
 import { FaBed, FaBath, FaCar, FaMapMarkerAlt } from "react-icons/fa";
 
-const PropertyCard = ({
-  image,
-  location,
-  area,
-  bedrooms,
-  bathrooms,
-  parking,
-}) => {
+const Card = ({ image, location, area, bedrooms, bathrooms, parking }) => {
   return (
     <div className="property-card">
       {/* Image */}
@@ -42,4 +34,4 @@ const PropertyCard = ({
   );
 };
 
-export default PropertyCard;
+export default Card;
