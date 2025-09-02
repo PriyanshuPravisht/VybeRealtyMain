@@ -1,0 +1,132 @@
+// .logo {
+//   text-decoration: none;
+//   color: var(--text-color);
+//   font-size: xx-large;
+//   font-weight: bold;
+// }
+
+// .nav-container {
+//   display: flex;
+//   gap: 2rem;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+
+// .nav-actions {
+//   display: flex;
+//   justify-content: space-between;
+//   font-weight: 400;
+//   letter-spacing: 0.5px;
+//   align-items: center;
+//   text-align: center;
+//   padding: 1rem 2rem;
+//   color: var(--text-color);
+// }
+// .nav-links ul {
+//   display: flex;
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+//   gap: 1rem;
+// }
+
+// .nav-links a {
+//   font-size: large;
+//   position: relative;
+//   text-decoration: none;
+//   color: var(--text-color);
+//   transition: border-bottom 0.3s ease;
+//   border-bottom: 2px solid transparent;
+// }
+
+// .down-arrow {
+//   display: flex;
+//   gap: 4px;
+//   text-align: center;
+// }
+
+/* =========================
+   Navbar Base Styles
+========================= */
+
+/* General */
+.logo {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.nav-container {
+  display: flex;
+  // gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: relative;
+  // overflow-x: hidden;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.nav-links a {
+  font-size: large;
+  text-decoration: none;
+  color: var(--text-color);
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.down-arrow {
+  display: flex;
+  gap: 4px;
+  text-align: center;
+}
+
+/* Hamburger button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .nav-actions {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-actions.open {
+    display: flex;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    // gap: 1.5rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

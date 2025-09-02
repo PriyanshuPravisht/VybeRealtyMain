@@ -1,14 +1,15 @@
-import React from "react";
 import { VideoSection } from "../components/media/VideoSection";
-import AboutUs from "./AboutUs";
-import ContactUs from "./ContactUs";
+import Services from "../components/media/Services";
+import { ContactForm } from "./ContactForm";
+import { PropertyRegisterForm } from "./PropertyRegisterForm";
 
 const Home = () => {
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
       <VideoSection />
-      <AboutUs />
-      <ContactUs />
+      <Services />
+      {/* <ContactForm /> */}
+      <PropertyRegisterForm />
     </div>
   );
 };

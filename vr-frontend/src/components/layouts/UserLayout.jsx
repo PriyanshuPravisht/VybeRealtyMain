@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Navbar from "../navigation/Navbar";
 import { useThemeStore } from "../../store/themeStore";
 import { Outlet } from "react-router-dom";
-import { Footer } from "../navigation/Footer";
+import Footer from "../navigation/Footer";
 
 export const UserLayout = () => {
   const { theme } = useThemeStore();
@@ -13,6 +13,7 @@ export const UserLayout = () => {
       theme === "dark" ? "dark-theme" : "light-theme"
     );
   }, [theme]);
+  
   return (
     <div>
       <Navbar />
