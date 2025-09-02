@@ -31,8 +31,7 @@ export const ContactForm = () => {
           <textarea placeholder="Message" rows="4" required></textarea>
         </div>
 
-        <div className="form-group checkbox-group">
-          <label className="policy-label">PRIVACY POLICY</label>
+        <div className="checkbox-group">
           <div className="checkbox-flex">
             <input type="checkbox" id="privacy" />
             <label htmlFor="privacy">

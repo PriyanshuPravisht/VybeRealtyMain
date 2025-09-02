@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background: #f7f7f7; /* light background like screenshot */
+  background: #f7f7f7;
 }
 
 .contact-form {
@@ -53,21 +53,24 @@ textarea {
 }
 
 .checkbox-group {
-  margin-top: 0.5rem;
-}
-
-.policy-label {
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  display: block;
-  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .checkbox-flex {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: #111;
+}
+
+.checkbox-flex input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: black;
+  cursor: pointer;
 }
 
 .submit-btn {
@@ -85,9 +88,41 @@ textarea {
   background: #222;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .form-row {
-    grid-template-columns: 1fr; /* stack First/Last name */
+    grid-template-columns: 1fr;
   }
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.form-container form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-container input {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.form-container button {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background: #0056b3;
 }
