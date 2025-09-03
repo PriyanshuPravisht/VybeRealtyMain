@@ -9,6 +9,8 @@ import Features from "../pages/admin/formComponents/Features";
 import AboutUs from "../pages/AboutUs";
 import ContactUs from "../pages/ContactUs";
 import Property from "../pages/Property";
+import Login from "../pages/admin/auth/Login";
+import SignUp from "../pages/admin/auth/SignUp";
 
 export const AppRoutes = [
   {
@@ -31,16 +33,19 @@ export const AppRoutes = [
         path: "/properties",
         element: <Property />,
       },
-    ],
-  },
-  {
-    path: "/admin",
-    element: <AdminLayout />,
-    children: [
-      { index: true, element: <AdminHome /> },
-      { path: "/admin/survey/", element: <Details /> },
-      { path: "/admin/survey/2", element: <Description /> },
-      { path: "/admin/survey/3", element: <Features /> },
+
+      {
+        path: "/admin",
+        element: <AdminLayout />,
+        children: [
+          { index: true, element: <AdminHome /> },
+          { path: "/admin/login", element: <Login /> },
+          { path: "/admin/signup", element: <SignUp /> },
+          { path: "/admin/survey/", element: <Details /> },
+          { path: "/admin/survey/2", element: <Description /> },
+          { path: "/admin/survey/3", element: <Features /> },
+        ],
+      },
     ],
   },
 ];
