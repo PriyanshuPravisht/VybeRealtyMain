@@ -31,7 +31,7 @@ const services = [
 const Services = () => {
   return (
     <>
-      <div className="service-container">
+      <div className="service-container" >
         <h1 className="sub-heading">
           EXCEPTIONAL REAL ESTATE SERVICES, TAILORED TO YOU
         </h1>
