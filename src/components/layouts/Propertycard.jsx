@@ -1,19 +1,55 @@
-import { FaBed, FaBath, FaCar, FaMapMarkerAlt } from "react-icons/fa";
-import Slider from "react-slick"; 
+import "../../styles/components/card.scss";
+import { FaBed, FaBath, FaCar, FaMapMarkerAlt, FaArrowRight,FaArrowLeft} from "react-icons/fa";
+// PropertyCard.jsx or App.jsx
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick"; 
 
-const Card = ({ image, location, area, bedrooms, bathrooms, parking }) => {
-   // Slider settings
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-  };
-  
+const PropertyCard = ({
+  image,
+  location,
+  area,
+  bedrooms,
+  bathrooms,
+  parking,
+}) => {
+
+
+// For Slide the image next or prev through with the icon button
+
+// const NextArrow = ({ onClick }) => {
+//   return (
+//     <button
+//       className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md z-10"
+//       onClick={onClick}
+//     >
+//        <span className="text-black text-2xl font-bold">{">"}</span>
+//     </button>
+//   );
+// };
+
+// const PrevArrow = ({ onClick }) => {
+//   return (
+//     <button
+//       className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md z-10"
+//       onClick={onClick}
+//     >
+//        <span className="text-black text-2xl font-bold">{"<"}</span>
+//     </button>
+//   );
+// };
+
+// carousel Setting
+const settings ={
+    dots:true,
+    infinite:true,
+    speed:500,
+    slidesToShow:1,
+    slidesToScroll:1,
+    // nextArrow: <NextArrow/>,
+    // prevArrow: <PrevArrow/>,
+};
+
   return (
     <div className="property-card">
       {/* Image */}
@@ -60,4 +96,4 @@ const Card = ({ image, location, area, bedrooms, bathrooms, parking }) => {
   );
 };
 
-export default Card;
+export default PropertyCard;

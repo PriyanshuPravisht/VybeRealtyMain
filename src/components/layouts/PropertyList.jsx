@@ -1,13 +1,13 @@
-import Card from "../components/layouts/Card";
+import PropertyCard from "./Propertycard";
 
-const Property = () => {
+const PropertyListing = () => {
   const properties = [
     {
       image: ["property1.jpg", "property2.jpg", "property3.jpg"],
       location: "New York, USA",
       area: 1500,
       bedrooms: 3,
-      bathrooms: 2,
+      bathrooms: 2, 
       parking: 1,
     },
     {
@@ -63,10 +63,10 @@ const Property = () => {
   return (
     <div className="propertylist-content">
       {properties.map((property, index) => (
-        <Card key={index} {...property} />
+        <PropertyCard key={index} {...property} />
       ))}
     </div>
   );
 };
 
-export default Property;
+export default PropertyListing;
